@@ -1,17 +1,17 @@
 
 
-export default function Primeiro(){
+export default function Primeiro() {
 
     const msg = "tudo ok"
 
 
     return (
-    <div>
+        <div>
 
-        <h2>Primeiro return { msg }</h2>
+            <h2>Primeiro return {msg}</h2>
 
-    </div>
+        </div>
 
-    
+
     )
 }
