@@ -14,12 +14,20 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo"
 import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import Input from "./components/formulario/Input"
+import Contador from "./components/contador/Contador"
+import Mega from "./components/mega/Mega"
 
 export default function App(props) {
     return (
         <div className="App">
             <h1>FUNDAMENTOS REACT</h1>
             <div className='Cards'>
+                <Card titulo="Mega">
+                    <Mega qtd={7} max={60}></Mega>
+                </Card>
+                <Card titulo="Contador">
+                    <Contador numeroInicial={10} passoInicial={2}></Contador>
+                </Card>
                 <Card titulo="Componente Controlado">
                     <Input></Input>
                 </Card>
