@@ -2,7 +2,7 @@ import "./Card.css"
 
 export default function (props) {
     const style = {
-        "background-color": props.color,
+        backgroundColor: props.color,
         "borderColor": props.color
 
     }

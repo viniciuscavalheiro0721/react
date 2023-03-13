@@ -7,13 +7,40 @@ import Card from "./components/layout/card"
 import Familia from "./components/basics/Familia"
 import FamiliaMembro from "./components/basics/FamiliaMembro"
 import ListaAlunos from "./components/repeticao/ListaAlunos"
-
+import TabelaProdutos from "./components/repeticao/TabelaProdutos"
+import ParOuImpar from "./components/condicional/ParOuImpar"
+import If from "./components/condicional/If"
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
+import DiretaPai from "./components/comunicacao/DiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import Input from "./components/formulario/Input"
 
 export default function App(props) {
     return (
         <div className="App">
             <h1>FUNDAMENTOS REACT</h1>
             <div className='Cards'>
+                <Card titulo="Componente Controlado">
+                    <Input></Input>
+                </Card>
+                <Card titulo="Relacao Indireta 'Filho' e 'Pai'">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+
+                <Card titulo="Relacao Direta 'Pai' e 'Filho'">
+                    <DiretaPai></DiretaPai>
+                </Card>
+                <Card titulo="Renderizacao Condicional">
+                    <ParOuImpar numero={78}></ParOuImpar>
+                    <UsuarioInfo usuario={{ nome: 'Vinicius' }}></UsuarioInfo>
+                </Card>
+                <Card titulo="Par ou Impar">
+                    <ParOuImpar
+                        numero={78}></ParOuImpar>
+                </Card>
+                <Card titulo="Tabela Produtos">
+                    <TabelaProdutos></TabelaProdutos>
+                </Card>
                 <Card titulo="Lista Alunos">
                     <ListaAlunos></ListaAlunos>
                 </Card>
